@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6F851AE11D252DF500291BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F851AE01D252DF500291BED /* AppDelegate.swift */; };
-		6F851AE31D252DF500291BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F851AE21D252DF500291BED /* ViewController.swift */; };
 		6F851AE61D252DF500291BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F851AE41D252DF500291BED /* Main.storyboard */; };
 		6F851AE81D252DF500291BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F851AE71D252DF500291BED /* Assets.xcassets */; };
 		6F851AEB1D252DF500291BED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F851AE91D252DF500291BED /* LaunchScreen.storyboard */; };
 		6F851AF61D252DF500291BED /* PhotoAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F851AF51D252DF500291BED /* PhotoAlbumTests.swift */; };
 		6F851B011D252DF500291BED /* PhotoAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F851B001D252DF500291BED /* PhotoAlbumUITests.swift */; };
+		6F851B0F1D252FEE00291BED /* BeginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F851B0E1D252FEE00291BED /* BeginViewController.swift */; };
+		6F851B111D25300400291BED /* ListPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F851B101D25300400291BED /* ListPhotoViewController.swift */; };
+		6F851B131D25301D00291BED /* ViewPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F851B121D25301D00291BED /* ViewPhotoViewController.swift */; };
+		6F851B151D25302F00291BED /* EditPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F851B141D25302F00291BED /* EditPhotoViewController.swift */; };
+		6F851B171D25305F00291BED /* ReleasePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F851B161D25305F00291BED /* ReleasePhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		6F851ADD1D252DF400291BED /* PhotoAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F851AE01D252DF500291BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6F851AE21D252DF500291BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6F851AE51D252DF500291BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F851AE71D252DF500291BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F851AEA1D252DF500291BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		6F851AFC1D252DF500291BED /* PhotoAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F851B001D252DF500291BED /* PhotoAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumUITests.swift; sourceTree = "<group>"; };
 		6F851B021D252DF500291BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F851B0E1D252FEE00291BED /* BeginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginViewController.swift; sourceTree = "<group>"; };
+		6F851B101D25300400291BED /* ListPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPhotoViewController.swift; sourceTree = "<group>"; };
+		6F851B121D25301D00291BED /* ViewPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPhotoViewController.swift; sourceTree = "<group>"; };
+		6F851B141D25302F00291BED /* EditPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPhotoViewController.swift; sourceTree = "<group>"; };
+		6F851B161D25305F00291BED /* ReleasePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleasePhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				6F851AE01D252DF500291BED /* AppDelegate.swift */,
-				6F851AE21D252DF500291BED /* ViewController.swift */,
+				6F851B0E1D252FEE00291BED /* BeginViewController.swift */,
+				6F851B101D25300400291BED /* ListPhotoViewController.swift */,
+				6F851B121D25301D00291BED /* ViewPhotoViewController.swift */,
+				6F851B141D25302F00291BED /* EditPhotoViewController.swift */,
+				6F851B161D25305F00291BED /* ReleasePhotoViewController.swift */,
 				6F851AE41D252DF500291BED /* Main.storyboard */,
 				6F851AE71D252DF500291BED /* Assets.xcassets */,
 				6F851AE91D252DF500291BED /* LaunchScreen.storyboard */,
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F851AE31D252DF500291BED /* ViewController.swift in Sources */,
+				6F851B131D25301D00291BED /* ViewPhotoViewController.swift in Sources */,
+				6F851B151D25302F00291BED /* EditPhotoViewController.swift in Sources */,
+				6F851B0F1D252FEE00291BED /* BeginViewController.swift in Sources */,
 				6F851AE11D252DF500291BED /* AppDelegate.swift in Sources */,
+				6F851B171D25305F00291BED /* ReleasePhotoViewController.swift in Sources */,
+				6F851B111D25300400291BED /* ListPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
