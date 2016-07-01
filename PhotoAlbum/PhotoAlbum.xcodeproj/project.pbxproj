@@ -105,16 +105,8 @@
 		6F851ADF1D252DF500291BED /* PhotoAlbum */ = {
 			isa = PBXGroup;
 			children = (
-				6F851AE01D252DF500291BED /* AppDelegate.swift */,
-				6F851B0E1D252FEE00291BED /* BeginViewController.swift */,
-				6F851B101D25300400291BED /* ListPhotoViewController.swift */,
-				6F851B121D25301D00291BED /* ViewPhotoViewController.swift */,
-				6F851B141D25302F00291BED /* EditPhotoViewController.swift */,
-				6F851B161D25305F00291BED /* ReleasePhotoViewController.swift */,
-				6F851AE41D252DF500291BED /* Main.storyboard */,
-				6F851AE71D252DF500291BED /* Assets.xcassets */,
-				6F851AE91D252DF500291BED /* LaunchScreen.storyboard */,
-				6F851AEC1D252DF500291BED /* Info.plist */,
+				6FC948EE1D25FDF100148935 /* Library */,
+				6FC948ED1D25FDD500148935 /* Resource */,
 			);
 			path = PhotoAlbum;
 			sourceTree = "<group>";
@@ -135,6 +127,30 @@
 				6F851B021D252DF500291BED /* Info.plist */,
 			);
 			path = PhotoAlbumUITests;
+			sourceTree = "<group>";
+		};
+		6FC948ED1D25FDD500148935 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6F851AE01D252DF500291BED /* AppDelegate.swift */,
+				6F851AE41D252DF500291BED /* Main.storyboard */,
+				6F851AE71D252DF500291BED /* Assets.xcassets */,
+				6F851AE91D252DF500291BED /* LaunchScreen.storyboard */,
+				6F851AEC1D252DF500291BED /* Info.plist */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		6FC948EE1D25FDF100148935 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				6F851B0E1D252FEE00291BED /* BeginViewController.swift */,
+				6F851B101D25300400291BED /* ListPhotoViewController.swift */,
+				6F851B121D25301D00291BED /* ViewPhotoViewController.swift */,
+				6F851B141D25302F00291BED /* EditPhotoViewController.swift */,
+				6F851B161D25305F00291BED /* ReleasePhotoViewController.swift */,
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -498,6 +514,7 @@
 				6F851B071D252DF500291BED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F851B081D252DF500291BED /* Build configuration list for PBXNativeTarget "PhotoAlbumTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +523,7 @@
 				6F851B0A1D252DF500291BED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F851B0B1D252DF500291BED /* Build configuration list for PBXNativeTarget "PhotoAlbumUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +532,7 @@
 				6F851B0D1D252DF500291BED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
