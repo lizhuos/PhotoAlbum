@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Begin View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BeginViewController" customModule="PhotoAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="PhotoAlbum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,12 +19,80 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ma3-eb-SkW">
-                        <barButtonItem key="rightBarButtonItem" title="照相机" id="qxD-GO-ghl"/>
+                        <barButtonItem key="rightBarButtonItem" title="照相机" id="qxD-GO-ghl">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="sEp-na-zr4" kind="presentation" id="oIJ-2S-wbr"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1152" y="429"/>
+        </scene>
+        <!--List Photo View Controller-->
+        <scene sceneID="sbW-41-OAE">
+            <objects>
+                <viewController id="7oe-Fk-94e" customClass="ListPhotoViewController" customModule="PhotoAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="znr-3v-uzb"/>
+                        <viewControllerLayoutGuide type="bottom" id="hhc-cm-ClY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UdO-Ca-qbf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wPT-QZ-qFs">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="JP2-WP-wWF">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mgb-Gp-u1n">
+                                <rect key="frame" x="20" y="7" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickCancelButton:" destination="7oe-Fk-94e" eventType="touchUpInside" id="wls-gU-vbD"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Hp9-0n-h6G">
+                            <rect key="frame" x="231" y="11" width="138" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="120" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Photo Album" image="navigationbar_arrow_up">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="navigationbar_arrow_down"/>
+                            <connections>
+                                <action selector="clickPhotoAlbumButton:" destination="7oe-Fk-94e" eventType="touchUpInside" id="mf5-xL-wl9"/>
+                            </connections>
+                        </button>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="69M-da-AAm">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wwg-EE-b7c">
+                                <rect key="frame" x="520" y="7" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="-10" maxY="0.0"/>
+                                <state key="normal" title="Comfirm">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickComfirmButton:" destination="7oe-Fk-94e" eventType="touchUpInside" id="pVq-7N-lKi"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="photoAlbumButton" destination="Hp9-0n-h6G" id="gnK-Lk-Q1c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ygh-M0-qrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2463" y="429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YMY-5y-Beh">
@@ -44,5 +112,27 @@
             </objects>
             <point key="canvasLocation" x="487" y="429"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6oX-HY-6IU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sEp-na-zr4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pjI-p7-mtW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7oe-Fk-94e" kind="relationship" relationship="rootViewController" id="a0S-NN-pKB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rGS-cq-7Q6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1805" y="429"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="navigationbar_arrow_down" width="13" height="7"/>
+        <image name="navigationbar_arrow_up" width="13" height="7"/>
+    </resources>
 </document>
